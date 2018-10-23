@@ -1,0 +1,8 @@
+applications:
+  whiskytango-fe:
+    repo: ssh://10.0.5.106:2222/Web-design/whiskytango.git
+    branch: develop
+commodities:
+  postgres:
+    repo: git@github.com:gathercole3/commodity-dev-postgres.git
+    branch: master

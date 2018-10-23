@@ -1,0 +1,21 @@
+#Python
+whiskytango_fe:
+  build: /vagrant/apps/whiskytango-fe
+  ports:
+    - "5101:8000"
+  volumes:
+    - /vagrant/apps/whiskytango-fe:/opt
+    
+#PHP
+#whiskytango_fe_php:
+#  build: /vagrant/apps/whiskytango-fe
+#  volumes:
+#    - /vagrant/apps/whiskytango-fe/data:/var/www/html
+#  ports:
+#    - "5102:8000"
+
+#commodities docker containers
+postgres:
+  build: /vagrant/commodities/postgres
+  ports:
+    - "5432:5432"
